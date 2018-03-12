@@ -16,10 +16,38 @@ public class AnimalFarm {
 AnimalFarm() {
 	/*
 	 * 1. Ask the user which animal they want, then play the sound of that
-	 * animal.
+	 * animal. 
 	 */
-
+	for(int i=0; i<16;i++) {
+		
+	String animal = JOptionPane.showInputDialog("what animal sound would you like to hear?") ; 
+	if (animal.equals ("dog")) {
+		 playNoise(woofFile);
+	}
+	if (animal.equals ("cat")) {
+		 playNoise(meowFile);
+	}
+	if (animal.equals ("llama")) {
+		 playNoise(llamaFile);
+	}
+	if (animal.equals ("cow")) {
+		 playNoise(mooFile);
+	}
+	if (animal.equals ("dog")) {
+		 playNoise(woofFile);
+	}
+	if (animal.equals ("duck")) {
+		 playNoise(quackFile);
+	}
+	if (animal.equals ("gusta")) {
+		 playNoise(gustaFile);
+	}
+}
+	
+	
+	
 	/* 2. Make it so that the user can keep entering new animals. */
+	
 }
 
 void playMoo() {
@@ -39,6 +67,7 @@ String mooFile = "moo.wav";
 String woofFile = "woof.wav";
 String meowFile = "meow.wav";
 String llamaFile = "llama.wav";
+String gustaFile = "me-gusta.wav";
 
 
 /* Ignore this stuff */
